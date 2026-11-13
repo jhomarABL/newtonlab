@@ -19,7 +19,7 @@ export class HomeView {
         <div class="section-heading"><div><p class="eyebrow">Contenido</p><h2 id="modules-title">Módulos del curso</h2></div><p>Avanza desde las herramientas matemáticas hasta sistemas de fuerzas.</p></div>
         <div class="module-list">${modules.map((module, index) => `
           <article class="module-row">
-            <div class="module-number" aria-hidden="true">${String(module.id).padStart(2,'0')}</div>
+            <div class="module-number" aria-hidden="true">${String(module.id).padStart(2, '0')}</div>
             <div class="module-copy"><span class="meta">${module.lecciones.length} lecciones</span><h3>${module.titulo}</h3><p>${module.descripcion}</p></div>
             <a class="button button-secondary" href="#/module/${module.id}">Entrar <span aria-hidden="true">→</span></a>
           </article>`).join('')}</div>

@@ -26,9 +26,9 @@ export class ModuleView {
           <span>${module.lecciones.length} lecciones</span>
           <span>
             ${module.lecciones.reduce(
-              (total, lesson) => total + lesson.ejercicios.length,
-              0
-            )} ejercicios
+      (total, lesson) => total + lesson.ejercicios.length,
+      0
+    )} ejercicios
           </span>
         </div>
       </section>
